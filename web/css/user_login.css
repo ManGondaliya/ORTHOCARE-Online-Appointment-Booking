@@ -1,0 +1,163 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+
+/* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body Style */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f9ff;
+            color: #333;
+        }
+
+        /* Header Style */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #0177d8;
+            color: white;
+            padding: 10px 20px;
+        }
+
+        /* Left Section: Logo and Name */
+        .header-left {
+            display: flex;
+            align-items: center;
+        }
+
+        .header-left img {
+
+            width: 40px; 
+            height: 40px; 
+            border-radius: 50%; 
+            margin-right: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+        }
+
+        .header-left h1 {
+            font-size: 20px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        /* Center Section: Title */
+        .header-center h2 {
+            font-size: 22px;
+            text-transform: uppercase;
+        }
+
+        /* Right Section: Navigation */
+        .header-right a {
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+            background-color: #025ab5;
+            padding: 8px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .header-right a:hover {
+            background-color: #013e7d;
+        }
+
+        /* Main Container */
+        .main-container {
+            display: flex;
+            max-width: 900px;
+            margin: 50px auto;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        /* Left Side: Image */
+        .image-container {
+            flex: 1.5;
+            background: url('../img/user1.png') no-repeat center center;
+            background-size: cover;
+            min-height: 400px;
+        }
+
+        /* Right Side: Form */
+        .form-container {
+            flex: 1.5;
+            padding: 30px;
+        }
+
+        .form-container h2 {
+            text-align: center;
+            color: #0177d8;
+            margin-bottom: 20px;
+            font-size: 22px;
+        }
+
+        .form-container label {
+            display: block;
+            font-size: 14px;
+            margin-bottom: 5px;
+            color: #555;
+        }
+
+        .form-container input[type="text"],
+        .form-container input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .form-container input[type="submit"] {
+            width: 100%;
+            background-color: #0177d8;
+            color: white;
+            border: none;
+            padding: 10px;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .form-container input[type="submit"]:hover {
+            background-color: #025ab5;
+        }
+
+        .form-container .registration-link {
+            text-align: center;
+            margin-top: 15px;
+        }
+
+        .form-container .registration-link a {
+            text-decoration: none;
+            color: #0177d8;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+
+        .form-container .registration-link a:hover {
+            color: #025ab5;
+        }
+
+        /* Footer Style */
+        footer {
+            background-color: #0177d8;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            font-size: 14px;
+        }

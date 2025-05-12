@@ -1,0 +1,129 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+
+
+body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        /* Header Styles */
+        .header {
+            background-color: #0077b6;
+            color: white;
+            padding: 5px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+/*        .header .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }*/
+        
+        .logo {
+    display: flex;
+    align-items: center;
+}
+.hospital-icon {
+            width: 50px; 
+            height: 50px; 
+            border-radius: 50%; 
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+            margin-right: 10px;
+        }
+
+header .logo h1 {
+            font-size: 24px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin: 0; 
+            margin-left: 15px;
+}
+
+
+        .header .navigation a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 16px;
+            padding: 10px 15px;
+            background-color: #005f8a;
+            border-radius: 5px;
+        }
+
+        .header .navigation a:hover {
+            background-color: #004d6f;
+        }
+
+        /* Welcome Section */
+        .welcome-section {
+            text-align: center;
+            background-color: #0077b6;
+            color: white;
+            padding: 50px 20px;
+        }
+
+        .welcome-section h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        .welcome-section p {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+
+        /* Features Section */
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin: 20px auto;
+            width: 80%;
+        }
+
+        .feature-box {
+            width: 30%;
+            background: white;
+            margin: 15px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .feature-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .feature-box h3 {
+            font-size: 22px;
+            color: #333;
+        }
+
+        .feature-box p {
+            color: #666;
+            font-size: 16px;
+        }
+
+        .feature-box a {
+            text-decoration: none;
+            color: white;
+            background-color: #0077b6;
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        .feature-box a:hover {
+            background-color: #005f8a;
+        }

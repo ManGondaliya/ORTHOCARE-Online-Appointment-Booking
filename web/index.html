@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>OrthoCare</title>
+    <link rel="icon" type="image/x-icon" href="images/ortho-logo.png">
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #e9f5fc;
+            color: #333;
+        }
+
+        
+       header {
+         background-color: #0177d8;
+         color: white;
+         padding: 20px 0;
+         text-align: center;
+       }
+
+        .header-container {
+               display: flex;
+               align-items: center;
+               justify-content: left;
+               gap: 15px; 
+               margin-left: 20px;
+        }
+
+        .hospital-icon {
+              width: 50px; 
+              height: 50px; 
+              border-radius: 50%; 
+              box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+        }
+
+        header h1 {
+            font-size: 24px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin: 0; /* Remove default margin */
+        }
+        
+         header h2 {
+            font-size: 24px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-left: 170px;
+            
+        }
+
+        /* Navigation Bar */
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #025ab5;
+            padding: 15px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            margin: 0 20px;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 10px 20px;
+            transition: background-color 0.3s, color 0.3s;
+            border-radius: 5px;
+        }
+
+        nav a:hover {
+            background-color: #0177d8;
+            color: #fff;
+        }
+
+        /* Content Section */
+        .content {
+            text-align: center;
+            padding: 50px;
+        }
+
+        .content h1 {
+            font-size: 36px;
+            color: #025ab5;
+            margin-bottom: 20px;
+        }
+
+        .content p {
+            font-size: 18px;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .content img {
+            width: 80%;
+            max-width: 500px; 
+            height: auto; /* Maintains the aspect ratio */
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Footer Style */
+        footer {
+            background-color: #025ab5;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    
+    <header>
+       <div class="header-container">
+           <img src="images/ortho-logo.png" alt="Hospital Icon" class="hospital-icon">
+           <h1>OrthoCare</h1>
+            <h2>OrthoCare Management & Appoinment Sheduling</h2>
+       </div>
+    </header>
+    <nav>
+        <a href="adminLogin.jsp">Admin Login</a>
+        <a href="doctorLogin.jsp">Doctor Login</a>
+        <a href="userLogin.jsp">User Login</a>
+        
+    </nav>
+    <div class="content">
+        <h1>Welcome to Our Hospital</h1>
+        <p>Your Health, Our Responsibility</p>
+        <img src="img/hospital-care.jpg" alt="Hospital Image">
+    </div>
+    <footer>
+        &copy; 2025 OrthoCare. All rights reserved.
+    </footer>
+</body>
+</html>
+

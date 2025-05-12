@@ -1,0 +1,305 @@
+
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Nov 22, 2024, 6:24:45 PM
+    Author     : hp
+*/
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    background-color: #f8f9fa;
+}
+
+/* Header */
+header {
+    background: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+.hospital-icon {
+            width: 50px; 
+            height: 50px; 
+            border-radius: 50%; 
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+        }
+
+header .logo h1 {
+            font-size: 24px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin: 0; 
+            margin-left: 15px;
+}
+
+header .nav-links {
+/*    list-style: none;
+    display: flex;*/
+               list-style: none;
+            display: flex;
+            justify-content: center;
+            /*background-color: #025ab5;*/
+            padding: 5px 0;
+}
+
+header .nav-links li {
+    margin: 0 10px;
+}
+
+header .nav-links a {
+/*    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;*/
+
+        text-decoration: none;
+            color: white;
+            margin: 0 10px;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 5px 5px;
+            transition: background-color 0.3s, color 0.3s;
+            border-radius: 5px;
+    
+}
+
+header .nav-links .btn {
+    background: #fff;
+    color: #007bff;
+    padding: 5px 5px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    
+}
+
+.nav-links a:hover{
+     background-color: #0177d8;
+     color: #fff;
+}
+
+
+
+/* Banner */
+.banner {
+    background: url('../images/ortho-banner.jpg') no-repeat center center/cover;
+    height: 400px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    text-align: center;
+}
+
+.banner-content {
+    max-width: 600px;
+}
+
+.banner-content h2 {
+    margin-left: 100px;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.banner-content p {
+    margin-bottom: 20px;
+    /*margin-left: 90px;*/
+}
+
+.banner-content .btn {
+    background: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    text-decoration: none;
+   
+}
+
+/* Doctor Cards Section */
+.doctors {
+    padding: 20px;
+    text-align: center;
+    background-color: #f1f1f1;
+   
+}
+
+.doctors h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.doctor-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.doctor-card {
+    text-align: center;
+    width: 200px;
+}
+
+.doctor-card img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.doctor-card p {
+    margin: 5px 0;
+}
+
+.experience {
+    color: #0177d8;
+    font-weight: bold;
+}
+
+
+
+/* About Section */
+.about {
+    padding: 20px;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.about-us-section {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+/* Section Heading */
+.about-us-section h2 {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #0177d8;
+    text-transform: uppercase;
+}
+
+/* Paragraph Style */
+.about-us-section p {
+    font-size: 16px;
+    line-height: 1.8;
+    text-align: justify;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+/* Highlighted Text (Optional) */
+.about-us-section p span {
+    color: #0177d8;
+    font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-us-section {
+        padding: 15px;
+    }
+
+    .about-us-section h2 {
+        font-size: 24px;
+    }
+
+    .about-us-section p {
+        font-size: 14px;
+    }
+}
+
+
+/* Services Section */
+.services {
+    background: #fff;
+    padding: 20px;
+    text-align: center;
+    
+}
+
+.services h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.services .slider {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.services .slide {
+    text-align: center;
+}
+
+.services .slide img {
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+
+/* Contact Section */
+.contact {
+    padding: 20px;
+    background: #f1f1f1;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.contact-info p {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+/* Footer */
+footer {
+    background: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+
